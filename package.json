@@ -1,0 +1,17 @@
+{
+    "name": "race-to-the-hive",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "A fun bee racing game with leaderboard",
+    "main": "src/game.js",
+    "scripts": {
+        "start": "npx http-server -a 0.0.0.0 -p 3000"
+    },
+    "dependencies": {
+        "@supabase/supabase-js": "^2.39.0",
+        "phaser": "^3.80.1"
+    },
+    "devDependencies": {
+        "http-server": "^14.1.1"
+    }
+}
