@@ -1,9 +1,8 @@
-// Using the global Supabase client from the browser bundle
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'YOUR_SUPABASE_URL';
-const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'YOUR_SUPABASE_ANON_KEY';
+// Import configuration
+import { config } from './config.js';
 
 // Create the Supabase client using the global supabase object
-export const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+export const supabase = window.supabase.createClient(config.supabase.url, config.supabase.anonKey);
 
 // Test the connection
 supabase
